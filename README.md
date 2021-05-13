@@ -20,7 +20,7 @@ dummy tutorials.
 # Credits
 
 - [Sounak Das](https://github.com/sounak1407)
-- [Vineeta Bhujle]()
+- [Vineeta Bhujle](https://github.com/vinz26)
 - [Rajat Chaudhari](https://github.com/rajatrc1705)
 
 # Documents
