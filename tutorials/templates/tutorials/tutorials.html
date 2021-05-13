@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block scripts %}
+
+<link rel="stylesheet" href="{% static 'tutorials/style_tutorials.css' %}">
+<script src="{% static 'tutorials/tutorials.js' %}" defer></script>
+
+{% endblock %}
+    
+{% block title %}
+{{obj.name}}
+{% endblock %}
+
+{% block content %}
+<body>
+  <div class="container-bg">
+    <ul class="box-area">
+			<li>C++</li>
+			<li>C</li>
+			<li>Java</li>
+			<li>Python</li>
+			<li>JavaScript</li>
+			<li>C#</li>
+		</ul>
+  <div class="container mt-3">
+  <section class="container-fluid" id="content">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="/home">VRSLang</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item active">
+          <a class="nav-link" href="/home">Profile</a>
+          <!-- <a class="nav-link" href="home.html">Profile</a> -->
+        </li>
+
+        <li class="nav-item active">
+            <a class="nav-link" href="/home">Home</a>
+            <!-- <a class="nav-link" href="home.html">Home</a> -->
+          </li>
+
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Premium</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+<br><br><br>
+<h2>Greetings,</h2>
+<p>Welcome to the tutorials page of VRS lang, <br>
+This Page provides you with step by step tutorials of VRS Lang<br>
+You Will Be able to mster our Language in no time.</p><hr>
+<div class="row">
+{% for obj in object_list %}
+<div class="col-sm-4 d-flex pb-3">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="../tutorials/{{obj.name}}.png" alt="Card image cap">
+        <!-- <img class="card-img-top" src="syntax.jpg" alt="Card image cap"> -->
+            <div class="card-body">
+              <h5 class="card-title">{{obj.name}}</h5>
+              <p class="card-text">{{obj.description}}</p>
+              <!-- <a href="#" class="btn btn-primary">{{obj.name}}</a> -->
+              <button id ="go-to" name="{{obj.name}}" class="btn btn-outline-primary redirect-button" value="{{obj.url}}">{{obj.name}}</button>
+            </div>
+    </div>
+</div>
+{% endfor %}
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% load static %}
+  
+{% block scripts %}
+
+<link rel="stylesheet" href="{% static 'home/style_home.css' %}">
+<script src="{% static 'home/home.js' %}" defer></script>
+
+{% endblock scripts %}
+
+{% block title %}
+{{obj.name}}
+{% endblock %}
+
+{% block content %}
+  <div class="container-bg">
+  <div class="container mt-3">
+  <section class="container-fluid" id="content">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="/home">VRSLang</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item active">
+          <a class="nav-link" href="/home">Profile</a>
+        </li>
+
+
+
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Premium</a>
+        </li>
+      </ul>
+
+    </div>
+    <a class="navbar-brand" href="/logout">Logout</a>
+  </nav>
+<br><br><br>
+<h2>Hello There,</h2>
+<p>Welcome to VRSLang, we, at VRSLang provide strive to introduce programming to absolute new comers <br>
+so that they aren't overwhelmed by it, and fall in love with programming.<br>
+We offer tutorials, tests and a practice area, where you can hone your skills.</p><hr>
+<div class="row">
+{% for obj in object_list %}
+<div class="col-sm-4 d-flex pb-3">
+    <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="../static/{{obj.name}}.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{obj.name}}</h5>
+              <p class="card-text">{{obj.description}}</p>
+              <button id="go-to" class="redirect-button btn btn-success" name="{{obj.name}}">{{obj.name}}</button>
+              <!-- <a id="go-to"  class="redirect-button" name="{{obj.name}}" class="stretched-link"></a> -->
+            </div>
+    </div>
+</div>
+{% endfor %}
+</div>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+{% endblock %}
