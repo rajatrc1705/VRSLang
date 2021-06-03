@@ -1,9 +1,10 @@
-# VRSLang
+# VRSLang ✨
 
 This project is the result of an academic team project. The project itself is a website, that has a quiz functionality and a tutorial functionality. 
 The practice arena is yet to be implemented. 
+The main motivation behind the project was to give the students a work like experience, to make students undestand how organizations go about developing projects, and the various different documentation work that the teams in the organization have to go through.
 
-# Technologies Used
+# Technologies Used 👩‍💻
 
 - Django
 - JavaScript
@@ -12,20 +13,24 @@ The practice arena is yet to be implemented.
 
 This repository has the entire implementation of the web application. As mentioned earlier, the practice arena is yet to be implemented.
 
-# Features
+# Features 💫
 
-The user can make an account, the registration form is validated properly, there is a login page. The quiz and leaderboard is functioning properly, and the tutorials page has 
-dummy tutorials. 
+- The user can make an account, the registration form is validated properly, there is a login page. 
+- The quiz and leaderboard is functioning properly, 
+- The tutorials page has dummy tutorials for now, but can be replaced with actual tutorials
+- The practice arena is yet to be implemented. 
 
-# Credits
+# Credits 🦋
 
 - [Sounak Das](https://github.com/sounak1407)
 - [Vineeta Bhujle](https://github.com/vinz26)
 - [Rajat Chaudhari](https://github.com/rajatrc1705)
 
-# Documents
+# Documents 📃
 
 The documents related to this project are SRS, SPMP, SDD, RIS, STD. All these documents are linked below.
+Latex was used for documentation purposes <br>
+
 - [SRS](https://drive.google.com/file/d/19LpD2DzDf2YjLs1kBhxn8M6_zm9nAQ2s/view?usp=sharing)
 - [SPMP](https://drive.google.com/file/d/1uINdy8S8HoaafNvbK_Rmk2FR_zpAUr7O/view?usp=sharing)
 - [SDD](https://drive.google.com/file/d/1dbthIhhpDkSHALxc1-GRaU1jpRbb2V-7/view?usp=sharing)
