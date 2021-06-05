@@ -1,8 +1,9 @@
 # VRSLang ✨
 
 This project is the result of an academic team project. The project itself is a website, that has a quiz functionality and a tutorial functionality. 
-The practice arena is yet to be implemented. 
-The main motivation behind the project was to give the students a work like experience, to make students undestand how organizations go about developing projects, and the various different documentation work that the teams in the organization have to go through.
+<br>The practice arena is yet to be implemented. 
+The main motivation behind the project was to give the students all three things (Tutorials, Quiz, Practice Arena) at one place.<br>
+The idea behind making us students do such projects was to provide them with a work like experience, to understand how an organization goes about doing such projects.
 
 ## Technologies Used 👩‍💻
 
